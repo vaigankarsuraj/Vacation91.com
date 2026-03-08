@@ -2,245 +2,41 @@
 <html>
 <head>
 <title>Vacation91</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-body{
-font-family: Arial;
-margin:0;
-background:#f4f6f9;
-}
-
-header{
-background:white;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo{
-font-size:24px;
-font-weight:bold;
-color:#1a73e8;
-}
-
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-.hero{
-height:420px;
-background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
-
-.hero h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.search-box{
-background:white;
-padding:15px;
-border-radius:10px;
-margin-top:20px;
-}
-
-.search-box input{
-padding:10px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-.search-box button{
-padding:10px 20px;
-background:#1a73e8;
-color:white;
-border:none;
-border-radius:5px;
-}
-
-.section{
-padding:50px;
-}
-
-.section h2{
-margin-bottom:20px;
-}
-
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-width:250px;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-height:150px;
-object-fit:cover;
-}
-
-.card-content{
-padding:15px;
-}
-
-.price{
-color:#1a73e8;
-font-weight:bold;
-}
-
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:8px 15px;
-background:#1a73e8;
-color:white;
-border-radius:5px;
-text-decoration:none;
-}
-
-.features{
-display:flex;
-justify-content:space-around;
-background:white;
-padding:30px;
-}
-
-.feature{
-text-align:center;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-</style>
-
 </head>
 
 <body>
 
-<header>
+<h1>Vacation91 Booking</h1>
 
-<div class="logo">Vacation91</div>
+<h2>Signup</h2>
 
-<nav>
-<a href="#">Experiences</a>
-<a href="#">Adventures</a>
-<a href="#">Parties</a>
-<a href="#">Blog</a>
-<a href="#">Partner With Us</a>
-</nav>
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<input id="password" placeholder="Password">
 
-</header>
+<button onclick="signup()">Signup</button>
 
-<div class="hero">
+<script>
 
-<h1>Discover the Best Experiences in Goa</h1>
-<p>Book Parties, Adventures & Unique Activities</p>
+async function signup(){
 
-<div class="search-box">
-<input placeholder="Where to? Goa">
-<input placeholder="What to do?">
-<button>Search</button>
-</div>
+await fetch("http://localhost:5000/api/auth/signup",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+name:document.getElementById("name").value,
+email:document.getElementById("email").value,
+password:document.getElementById("password").value
+})
+});
 
-</div>
+alert("Signup successful");
 
-<div class="section">
+}
 
-<h2>Trending Experiences</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-<div class="card-content">
-<h3>Sunset Boat Party</h3>
-<p class="price">₹2499</p>
-<a class="btn">Book Now</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
-<div class="card-content">
-<h3>Scuba Diving</h3>
-<p class="price">₹3499</p>
-<a class="btn">Book Now</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf">
-<div class="card-content">
-<h3>Goa Pub Crawl</h3>
-<p class="price">₹1999</p>
-<a class="btn">Book Now</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b">
-<div class="card-content">
-<h3>Casino Night</h3>
-<p class="price">₹2500</p>
-<a class="btn">Book Now</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-<div class="features">
-
-<div class="feature">
-<h3>✔ Verified Operators</h3>
-</div>
-
-<div class="feature">
-<h3>💰 Best Price Guarantee</h3>
-</div>
-
-<div class="feature">
-<h3>⚡ Instant Booking</h3>
-</div>
-
-<div class="feature">
-<h3>📞 24/7 Support</h3>
-</div>
-
-</div>
-
-<footer>
-
-<p>© 2026 Vacation91.com</p>
-
-</footer>
+</script>
 
 </body>
 </html>
