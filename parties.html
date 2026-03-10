@@ -3,7 +3,7 @@
 
 <head>
 <title>Goa Nightlife | Vacation91</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -17,16 +17,17 @@ background:#f4f6f9;
 header{
 background:#111;
 color:white;
-padding:15px 40px;
+padding:15px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
 header a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin:10px;
 font-weight:bold;
 }
 
@@ -37,18 +38,19 @@ display:flex;
 align-items:center;
 justify-content:center;
 color:white;
-font-size:35px;
-font-weight:bold;
+font-size:32px;
+text-align:center;
+padding:20px;
 }
 
 .section{
-padding:40px;
+padding:40px 20px;
 }
 
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:25px;
+gap:20px;
 justify-content:center;
 }
 
@@ -68,10 +70,7 @@ object-fit:cover;
 
 .card-content{
 padding:15px;
-}
-
-.card h3{
-margin-top:0;
+text-align:center;
 }
 
 .btn{
@@ -84,10 +83,6 @@ text-decoration:none;
 border-radius:6px;
 }
 
-.video{
-margin-top:10px;
-}
-
 footer{
 background:#111;
 color:white;
@@ -96,6 +91,44 @@ padding:20px;
 margin-top:40px;
 }
 
+/* MOBILE */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card{
+width:90%;
+}
+
+.hero{
+font-size:24px;
+height:auto;
+padding:40px 20px;
+}
+
+}
+
+@media (max-width:480px){
+
+.hero{
+font-size:20px;
+}
+
+header a{
+display:block;
+margin:8px 0;
+}
+
+}
 </style>
 </head>
 
