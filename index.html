@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>Vacation91</title>
@@ -12,7 +11,7 @@
 body{
 font-family:Arial;
 margin:0;
-background:#f4f6f9;
+background:#f5f6fa;
 }
 
 /* HEADER */
@@ -27,92 +26,97 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo{
-font-size:24px;
+font-size:26px;
 font-weight:bold;
-color:#1a73e8;
+color:#2b6cb0;
 }
 
 nav a{
-margin:0 15px;
+margin:0 12px;
 text-decoration:none;
 color:#333;
 font-weight:500;
 }
 
-/* HERO VIDEO */
+/* HERO */
 
 .hero{
-position:relative;
+background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
 height:420px;
-overflow:hidden;
 display:flex;
+flex-direction:column;
 align-items:center;
 justify-content:center;
-text-align:center;
 color:white;
+text-align:center;
 }
 
-.hero-video{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:-1;
-}
-
-.hero-content{
-z-index:1;
-}
-
-.hero-content h1{
-font-size:40px;
+.hero h1{
+font-size:38px;
 margin-bottom:10px;
 }
 
-.hero-content button{
-padding:12px 25px;
-font-size:18px;
-border:none;
-background:black;
+.search-box{
+background:white;
+padding:15px;
+border-radius:8px;
+margin-top:20px;
+}
+
+.search-box input{
+padding:10px;
+margin:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.search-box button{
+padding:10px 20px;
+background:#1a73e8;
 color:white;
-cursor:pointer;
+border:none;
+border-radius:5px;
 }
 
 /* CARDS */
 
+.section{
+padding:40px;
+}
+
 .cards{
 display:flex;
-justify-content:center;
 gap:20px;
 flex-wrap:wrap;
-padding:40px;
+justify-content:center;
 }
 
 .card{
 background:white;
-padding:20px;
-width:280px;
+width:250px;
 border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
 text-align:center;
 }
 
-iframe{
-border-radius:10px;
-margin-bottom:10px;
-}
-
-/* BUTTON */
-
 .btn{
 display:inline-block;
-padding:10px 18px;
+padding:8px 16px;
 background:#1a73e8;
 color:white;
 text-decoration:none;
-border-radius:6px;
+border-radius:5px;
 }
 
 /* FEATURES */
@@ -127,16 +131,16 @@ flex-wrap:wrap;
 
 .feature{
 text-align:center;
-margin:10px;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
+background:#111;
 color:white;
 text-align:center;
 padding:20px;
+margin-top:40px;
 }
 
 /* MOBILE */
@@ -148,12 +152,8 @@ flex-direction:column;
 align-items:center;
 }
 
-.hero-content h1{
+.hero h1{
 font-size:26px;
-}
-
-.hero{
-height:350px;
 }
 
 }
@@ -169,107 +169,103 @@ height:350px;
 <div class="logo">Vacation91</div>
 
 <nav>
-<a href="/">Home</a>
+<a href="/">Experiences</a>
+<a href="/">Adventures</a>
 <a href="parties.html">Parties</a>
+<a href="/">Blog</a>
+<a href="/">Partner With Us</a>
 </nav>
 
 </header>
 
-<!-- HERO VIDEO -->
-
 <div class="hero">
-
-<video autoplay muted loop playsinline class="hero-video">
-
-<source src="https://cdn.coverr.co/videos/coverr-party-people-dancing-in-a-nightclub-4763/1080p.mp4" type="video/mp4">
-
-</video>
-
-<div class="hero-content">
 
 <h1>Discover the Best Experiences in Goa</h1>
 
-<p>Book Nightlife, Adventures & Unique Activities</p>
+<p>Book Parties, Adventures & Unique Activities</p>
 
-<button onclick="location.href='parties.html'">Explore Now</button>
+<div class="search-box">
+
+<input placeholder="Where to? Goa">
+
+<input placeholder="What to do? Experiences">
+
+<button>Search</button>
 
 </div>
 
 </div>
 
-<!-- EXPERIENCES -->
+<div class="section">
+
+<h2>Trending Experiences</h2>
 
 <div class="cards">
 
-<!-- SUNSET BOAT PARTY -->
-
 <div class="card">
-
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+<div class="card-content">
 <h3>Sunset Boat Party</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/wNc-u97bKRk"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
 <p>₹2499</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Sunset%20Boat%20Party%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
-
+<a class="btn">Book Now</a>
+</div>
 </div>
 
-<!-- SCUBA DIVING -->
-
 <div class="card">
-
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
+<div class="card-content">
 <h3>Scuba Diving</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/Escnj9RZalw"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
 <p>₹3499</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Scuba%20Diving%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
-
+<a class="btn">Book Now</a>
 </div>
-
-<!-- CASINO NIGHT -->
+</div>
 
 <div class="card">
-
+<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7">
+<div class="card-content">
 <h3>Casino Night</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/f-dixA5du8o"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
 <p>₹2500</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Casino%20Night%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
+<a class="btn">Book Now</a>
+</div>
+</div>
 
 </div>
 
 </div>
 
-<!-- FEATURES -->
+<div class="section">
+
+<h2>Top Experiences in Goa</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<div class="card-content">
+<h3>Baga Beach Party</h3>
+<a class="btn">View Details</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+<div class="card-content">
+<h3>Grand Island Scuba Diving</h3>
+<a class="btn">View Details</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+<div class="card-content">
+<h3>Parasailing Adventure</h3>
+<a class="btn">View Details</a>
+</div>
+</div>
+
+</div>
+
+</div>
 
 <div class="features">
 
@@ -282,13 +278,13 @@ Book Now
 </div>
 
 <div class="feature">
-<a href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20via%20Vacation91" style="text-decoration:none;color:black;">
+<a href="https://wa.me/919511766243">
 <h3>⚡ Instant Booking</h3>
 </a>
 </div>
 
 <div class="feature">
-<a href="tel:+919511766243" style="text-decoration:none;color:black;">
+<a href="tel:+919511766243">
 <h3>📞 24/7 Support</h3>
 </a>
 </div>
@@ -297,16 +293,9 @@ Book Now
 
 <footer>
 
-<p>© 2026 Vacation91.com</p>
+© 2026 Vacation91.com
 
 </footer>
-
-<!-- FLOATING WHATSAPP -->
-
-<a href="https://wa.me/919511766243"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;text-decoration:none;font-size:22px;">
-💬
-</a>
 
 </body>
 
