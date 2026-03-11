@@ -1,382 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Vacation91</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f5f6fa;
-}
-
-/* HEADER */
-
-header{
-background:white;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo{
-font-size:26px;
-font-weight:bold;
-color:#2b6cb0;
-}
-
-nav a{
-margin:0 12px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-/* HERO */
-
-.hero{
-background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
-height:420px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-color:white;
-text-align:center;
-}
-
-.hero h1{
-font-size:38px;
-margin-bottom:10px;
-}
-
-.search-box{
-background:white;
-padding:15px;
-border-radius:8px;
-margin-top:20px;
-}
-
-.search-box input{
-padding:10px;
-margin:5px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-.search-box button{
-padding:10px 20px;
-background:#1a73e8;
-color:white;
-border:none;
-border-radius:5px;
-}
-
-/* CARDS */
-
-.section{
-padding:40px;
-}
-
-.cards{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card{
-background:white;
-width:250px;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-height:150px;
-object-fit:cover;
-}
-
-.card-content{
-padding:15px;
-text-align:center;
-}
-
-.btn{
-display:inline-block;
-padding:8px 16px;
-background:#1a73e8;
-color:white;
-text-decoration:none;
-border-radius:5px;
-}
-
-/* FEATURES */
-
-.features{
-display:flex;
-justify-content:space-around;
-background:white;
-padding:30px;
-flex-wrap:wrap;
-}
-
-.feature{
-text-align:center;
-}
-
-/* FOOTER */
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.hero h1{
-font-size:26px;
-}
-
-}
-
-</style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vacation91 - Book Amazing Trips</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
 <div class="logo">Vacation91</div>
 
 <nav>
-<a href="/">Experiences</a>
-<a href="/">Adventures</a>
-<a href="parties.html">Parties</a>
-<a href="/">Blog</a>
-<a href="https://docs.google.com/forms/d/174dSuInSKLnPJDrTccUDT-Xb2UMNJ2UXuuPbNj_ukm8/edit" target="_blank">Partner With Us</a>
+<a href="#">Home</a>
+<a href="#">Destinations</a>
+<a href="#">Packages</a>
+<a href="#">Blogs</a>
+<a href="#">Contact</a>
 </nav>
 
+<button class="enquiry-btn">Plan My Trip</button>
 </header>
 
-<div class="hero">
+<section class="hero">
 
-<h1>Discover the Best Experiences in Goa</h1>
-
-<p>Book Parties, Adventures & Unique Activities</p>
+<h1>Explore The World With Vacation91</h1>
+<p>Affordable International Tour Packages from India</p>
 
 <div class="search-box">
 
-<input placeholder="Where to? Goa">
+<input type="text" placeholder="Destination">
+<input type="month">
 
-<input placeholder="What to do? Experiences">
+<select>
+<option>Budget</option>
+<option>₹50k - ₹1L</option>
+<option>₹1L - ₹2L</option>
+<option>₹2L+</option>
+</select>
 
 <button>Search</button>
 
 </div>
 
-</div>
+</section>
 
-<div class="section">
 
-<h2>Trending Experiences</h2>
+<section class="destinations">
 
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
-<div class="card-content">
-<h3>Sunset Boat Party</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/wNc-u97bKRk"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-<p>₹2499</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Sunset%20Boat%20Party%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
-<div class="card-content">
-<h3>Scuba Diving</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/Escnj9RZalw"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-<p>₹3499</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Scuba%20Diving%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7">
-<div class="card-content">
-<h3>Casino Night</h3>
-
-<iframe width="100%" height="180"
-src="https://www.youtube.com/embed/f-dixA5du8o"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-<p>₹2500</p>
-
-<a class="btn"
-href="https://wa.me/919511766243?text=Hi%20I%20want%20to%20book%20Casino%20Night%20via%20Vacation91"
-target="_blank">
-Book Now
-</a>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="section">
-
-<h2>Restaurants in Goa</h2>
+<h2>Top Destinations</h2>
 
 <div class="cards">
 
 <div class="card">
+<img src="images/bali.jpg">
+<h3>Bali</h3>
+</div>
 
-<h3>Om Sai Goan Fast Food</h3>
+<div class="card">
+<img src="images/vietnam.jpg">
+<h3>Vietnam</h3>
+</div>
 
-<iframe width="100%" height="200"
-src="https://www.youtube.com/embed/g9cks8K7VTU"
-frameborder="0"
-allowfullscreen>
-</iframe>
+<div class="card">
+<img src="images/singapore.jpg">
+<h3>Singapore</h3>
+</div>
 
-<p>Authentic Goan fast food with local flavors.</p>
-
-<a class="btn"
-href="https://wa.me/919823170892?text=Hi%20I%20want%20to%20visit%20Om%20Sai%20Goan%20Fast%20Food%20via%20Vacation91"
-target="_blank">
-View Details
-</a>
-
+<div class="card">
+<img src="images/thailand.jpg">
+<h3>Thailand</h3>
 </div>
 
 </div>
 
-</div>
-<div class="section">
+</section>
 
-<h2>Top Experiences in Goa</h2>
+
+<section class="packages">
+
+<h2>Trending Packages</h2>
 
 <div class="cards">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<div class="card-content">
-<h3>Baga Beach Party</h3>
-<a class="btn">View Details</a>
-</div>
-</div>
+<div class="package-card">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
-<div class="card-content">
-<h3>Grand Island Scuba Diving</h3>
-<a class="btn">View Details</a>
-</div>
-</div>
+<img src="images/bali2.jpg">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
-<div class="card-content">
-<h3>Parasailing Adventure</h3>
-<a class="btn">View Details</a>
-</div>
-</div>
+<h3>Bali 5 Nights / 6 Days</h3>
+
+<p>Flights + 4★ Hotel + Breakfast</p>
+
+<h4>₹69,999</h4>
+
+<button>View Details</button>
 
 </div>
 
+
+<div class="package-card">
+
+<img src="images/vietnam2.jpg">
+
+<h3>Vietnam 6 Nights / 7 Days</h3>
+
+<p>Flights + 4★ Hotel + Sightseeing</p>
+
+<h4>₹89,999</h4>
+
+<button>View Details</button>
+
 </div>
+
+</div>
+
+</section>
+
+
+<section class="why-us">
+
+<h2>Why Book With Vacation91?</h2>
 
 <div class="features">
 
-<div class="feature">
-<h3>✔ Verified Operators</h3>
+<div>
+<h3>⭐ Best Price</h3>
+<p>We offer best deals for international travel</p>
 </div>
 
-<div class="feature">
-<h3>💰 Best Price Guarantee</h3>
+<div>
+<h3>📞 24x7 Support</h3>
+<p>Dedicated travel expert support</p>
 </div>
 
-<div class="feature">
-<a href="https://wa.me/919511766243">
-<h3>⚡ Instant Booking</h3>
-</a>
-</div>
-
-<div class="feature">
-<a href="tel:+919511766243">
-<h3>📞 24/7 Support</h3>
-</a>
+<div>
+<h3>🧳 Custom Trips</h3>
+<p>Fully customizable travel packages</p>
 </div>
 
 </div>
 
-<div class="section" style="text-align:center;padding:40px;background:#f5f6fa;">
+</section>
 
-<h2>Founder</h2>
 
-<img src="Founder.jpg" alt="Suraj Vaigankar" style="width:220px;height:auto;margin-top:15px;border-radius:10px;">
+<section class="testimonials">
 
-<h3 style="margin-top:15px;">Suraj Vaigankar</h3>
+<h2>Happy Travellers</h2>
 
-<p>Founder of Vacation91</p>
+<div class="testimonial">
 
-<p>Helping travelers discover the best nightlife, adventures and experiences in Goa.</p>
+<p>"Amazing Vietnam trip organized by Vacation91!"</p>
+<h4>- Rahul, Mumbai</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>"Best travel planning experience."</p>
+<h4>- Sneha, Pune</h4>
 
 </div>
 
-</div>
-</div>
-  <footer>
+</section>
 
-© 2026 Vacation91.com
+
+<section class="blog">
+
+<h2>Travel Tips & Guides</h2>
+
+<div class="cards">
+
+<div class="blog-card">
+<img src="images/vietnam-guide.jpg">
+<h3>Best Time To Visit Vietnam</h3>
+</div>
+
+<div class="blog-card">
+<img src="images/bali-budget.jpg">
+<h3>Bali Trip Cost From India</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Vacation91.com</p>
 
 </footer>
 
-</body>
 
+<a class="whatsapp" href="https://wa.me/919511766243">Chat on WhatsApp</a>
+
+</body>
 </html>
