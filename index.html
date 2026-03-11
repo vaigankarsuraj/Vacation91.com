@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vacation91 - Book Amazing Trips</title>
+<title>Vacation91</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+
 <div class="logo">Vacation91</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Destinations</a>
-<a href="#">Packages</a>
-<a href="#">Blogs</a>
-<a href="#">Contact</a>
+<a href="#">Flights</a>
+<a href="#">Hotels</a>
+<a href="#">Holidays</a>
+<a href="#">Visa</a>
+<a href="#">Cruises</a>
 </nav>
 
-<button class="enquiry-btn">Plan My Trip</button>
+<div class="login">
+<button>Login</button>
+</div>
+
 </header>
+
 
 <section class="hero">
 
-<h1>Explore The World With Vacation91</h1>
-<p>Affordable International Tour Packages from India</p>
+<div class="search-container">
+
+<div class="tabs">
+<button class="active">Flights</button>
+<button>Hotels</button>
+<button>Holidays</button>
+</div>
 
 <div class="search-box">
 
-<input type="text" placeholder="Destination">
-<input type="month">
+<input type="text" placeholder="From">
+<input type="text" placeholder="To">
+
+<input type="date">
+<input type="date">
 
 <select>
-<option>Budget</option>
-<option>₹50k - ₹1L</option>
-<option>₹1L - ₹2L</option>
-<option>₹2L+</option>
+<option>Travellers</option>
+<option>1 Traveller</option>
+<option>2 Travellers</option>
+<option>3 Travellers</option>
 </select>
 
-<button>Search</button>
+<button class="search-btn">Search</button>
+
+</div>
 
 </div>
 
@@ -49,28 +64,32 @@
 
 <section class="destinations">
 
-<h2>Top Destinations</h2>
+<h2>Trending Destinations</h2>
 
-<div class="cards">
+<div class="dest-grid">
 
-<div class="card">
+<div class="dest-card">
 <img src="images/bali.jpg">
 <h3>Bali</h3>
+<p>Starting ₹55,000</p>
 </div>
 
-<div class="card">
+<div class="dest-card">
 <img src="images/vietnam.jpg">
 <h3>Vietnam</h3>
+<p>Starting ₹65,000</p>
 </div>
 
-<div class="card">
-<img src="images/singapore.jpg">
-<h3>Singapore</h3>
-</div>
-
-<div class="card">
+<div class="dest-card">
 <img src="images/thailand.jpg">
 <h3>Thailand</h3>
+<p>Starting ₹45,000</p>
+</div>
+
+<div class="dest-card">
+<img src="images/dubai.jpg">
+<h3>Dubai</h3>
+<p>Starting ₹70,000</p>
 </div>
 
 </div>
@@ -80,21 +99,25 @@
 
 <section class="packages">
 
-<h2>Trending Packages</h2>
+<h2>Popular Holiday Packages</h2>
 
-<div class="cards">
+<div class="package-grid">
 
 <div class="package-card">
 
 <img src="images/bali2.jpg">
 
-<h3>Bali 5 Nights / 6 Days</h3>
+<div class="package-info">
 
-<p>Flights + 4★ Hotel + Breakfast</p>
+<h3>Bali 6 Days</h3>
+
+<p>Hotel + Flights + Sightseeing</p>
 
 <h4>₹69,999</h4>
 
-<button>View Details</button>
+<button>View Package</button>
+
+</div>
 
 </div>
 
@@ -103,40 +126,18 @@
 
 <img src="images/vietnam2.jpg">
 
-<h3>Vietnam 6 Nights / 7 Days</h3>
+<div class="package-info">
 
-<p>Flights + 4★ Hotel + Sightseeing</p>
+<h3>Vietnam 7 Days</h3>
+
+<p>Hotel + Flights + Tours</p>
 
 <h4>₹89,999</h4>
 
-<button>View Details</button>
+<button>View Package</button>
 
 </div>
 
-</div>
-
-</section>
-
-
-<section class="why-us">
-
-<h2>Why Book With Vacation91?</h2>
-
-<div class="features">
-
-<div>
-<h3>⭐ Best Price</h3>
-<p>We offer best deals for international travel</p>
-</div>
-
-<div>
-<h3>📞 24x7 Support</h3>
-<p>Dedicated travel expert support</p>
-</div>
-
-<div>
-<h3>🧳 Custom Trips</h3>
-<p>Fully customizable travel packages</p>
 </div>
 
 </div>
@@ -144,41 +145,25 @@
 </section>
 
 
-<section class="testimonials">
+<section class="why">
 
-<h2>Happy Travellers</h2>
+<h2>Why Choose Vacation91</h2>
 
-<div class="testimonial">
+<div class="why-grid">
 
-<p>"Amazing Vietnam trip organized by Vacation91!"</p>
-<h4>- Rahul, Mumbai</h4>
-
+<div>
+<h3>Best Prices</h3>
+<p>We compare prices to give best deals.</p>
 </div>
 
-<div class="testimonial">
-
-<p>"Best travel planning experience."</p>
-<h4>- Sneha, Pune</h4>
-
+<div>
+<h3>24/7 Support</h3>
+<p>Travel experts available anytime.</p>
 </div>
 
-</section>
-
-
-<section class="blog">
-
-<h2>Travel Tips & Guides</h2>
-
-<div class="cards">
-
-<div class="blog-card">
-<img src="images/vietnam-guide.jpg">
-<h3>Best Time To Visit Vietnam</h3>
-</div>
-
-<div class="blog-card">
-<img src="images/bali-budget.jpg">
-<h3>Bali Trip Cost From India</h3>
+<div>
+<h3>Custom Trips</h3>
+<p>Create your own travel experience.</p>
 </div>
 
 </div>
@@ -192,8 +177,9 @@
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/919000000000">WhatsApp</a>
 
-<a class="whatsapp" href="https://wa.me/919511766243">Chat on WhatsApp</a>
+<script src="script.js"></script>
 
 </body>
 </html>
