@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Homestays & Villas | Vacation91</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f6fa;
+}
+
+.section{
+padding:40px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:280px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 15px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Vacation91</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="parties.html">Parties</a>
+<a href="adventures.html">Adventures</a>
+<a href="hotels.html">Hotels</a>
+<a href="Homestays & Villas.html">Homestays & Villas</a>
+
+</nav>
+
+</header>
+
+<div class="section">
+
+<h2 style="text-align:center;">Homestays & Villas in Goa</h2>
+
+<div class="cards">
+
+<!-- Villa 1 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811">
+
+<div class="card-content">
+
+<h3>Luxury Beach Villa Goa</h3>
+
+<p>Private villa with pool near Anjuna Beach.</p>
+
+<div style="display:flex;gap:10px">
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Anjuna+Beach+Villa+Goa" target="_blank" style="background:#34a853;">
+View on Map
+</a>
+
+<a class="btn" href="https://wa.me/919511766243?text=Hi I want to book Luxury Beach Villa in Goa via Vacation91" target="_blank" style="background:#25D366;">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Villa 2 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914">
+
+<div class="card-content">
+
+<h3>Poolside Villa Vagator</h3>
+
+<p>Luxury private villa with swimming pool.</p>
+
+<div style="display:flex;gap:10px">
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Vagator+Pool+Villa" target="_blank" style="background:#34a853;">
+View on Map
+</a>
+
+<a class="btn" href="https://wa.me/919511766243?text=Hi I want to book Poolside Villa Vagator via Vacation91" target="_blank" style="background:#25D366;">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Villa 3 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6">
+
+<div class="card-content">
+
+<h3>Luxury Homestay Calangute</h3>
+
+<p>Comfortable homestay near Calangute Beach.</p>
+
+<div style="display:flex;gap:10px">
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Calangute+Homestay" target="_blank" style="background:#34a853;">
+View on Map
+</a>
+
+<a class="btn" href="https://wa.me/919511766243?text=Hi I want to book Calangute Homestay via Vacation91" target="_blank" style="background:#25D366;">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Villa 4 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
+
+<div class="card-content">
+
+<h3>Sea View Villa Morjim</h3>
+
+<p>Luxury villa with sea view near Morjim Beach.</p>
+
+<div style="display:flex;gap:10px">
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Morjim+Sea+View+Villa" target="_blank" style="background:#34a853;">
+View on Map
+</a>
+
+<a class="btn" href="https://wa.me/919511766243?text=Hi I want to book Sea View Villa Morjim via Vacation91" target="_blank" style="background:#25D366;">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Villa 5 -->
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+
+<div class="card-content">
+
+<h3>Luxury Pool Villa Baga</h3>
+
+<p>Private villa with pool near Baga Beach.</p>
+
+<div style="display:flex;gap:10px">
+
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Baga+Luxury+Villa" target="_blank" style="background:#34a853;">
+View on Map
+</a>
+
+<a class="btn" href="https://wa.me/919511766243?text=Hi I want to book Luxury Pool Villa Baga via Vacation91" target="_blank" style="background:#25D366;">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
